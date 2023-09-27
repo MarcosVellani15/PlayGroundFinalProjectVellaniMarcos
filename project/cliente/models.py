@@ -6,3 +6,12 @@ class Pais(models.Model):
 
     def __str__(self) -> str:
         return self.name 
+    
+class Cliente(models.Model):
+    name = models.CharField(max_length=100)
+    surname = models.CharField(max_length=100)
+    birth = models.DateField(null=True)
+    country_origin_id = models.ForeignKey(Pais, on_delete=models.SET_NULL, null=True, blank=True)
+
+    def __str__(self) -> str:
+        return f"{self.name} {self.surname}"

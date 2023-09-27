@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, "prueba/index.html")
+    contexto = {"name" : "Mi nombre es Marcos Vellani"}
+    return render(request, "prueba/index.html", contexto)

@@ -7,8 +7,15 @@
 </head>
 <body>
     
-    <h1>{{ name }}<h1>
-    <p>Esta es la clase cliente</p>
+    <h1>{{ Coderhouse }}<h1>
+    
+    <ul>
+    {% for cliente in Cliente.name%}
+        <li>{{cliente.name}}</li>
+        <li>{{cliente.surname}}</li>
+    {% endfor %}    
+    </ul>
+    <p>{{ cliente.name }}</p>
 
 
 </body>

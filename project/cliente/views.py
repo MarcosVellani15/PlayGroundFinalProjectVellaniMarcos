@@ -8,4 +8,4 @@ from . import models
 def index(request):
     cliente = models.Cliente.objects.all()
 
-    return render(request, "cliente/index.html", {"cliente":cliente})
+    return render(request, "cliente/index.html", {"Cliente":cliente})

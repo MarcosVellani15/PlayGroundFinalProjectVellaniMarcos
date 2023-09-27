@@ -6,6 +6,6 @@ from . import models
 
 
 def index(request):
-    cliente = models.Cliente.objects.all()
+    cliente = models.clientes.objects.all()
 
-    return render(request, "cliente/index.html", {"Cliente":cliente})
+    return render(request, "cliente/index.html", {"clientes":cliente})

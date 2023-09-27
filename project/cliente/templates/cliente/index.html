@@ -10,12 +10,14 @@
     <h1>{{ Coderhouse }}<h1>
     
     <ul>
-    {% for Cliente in Cliente.name%}
-        <li>{{cliente.name}}</li>
-        <li>{{cliente.surname}}</li>
+    {% for clientes in cliente%}
+
+        <li>{{clientes.name}}</li>
+        <li>{{clientes.surname}}</li>
+
     {% endfor %}    
     </ul>
-    <p>{{ cliente.name }}</p>
+    <p>{{ clientes.name }}</p>
 
 
 </body>

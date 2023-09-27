@@ -7,7 +7,7 @@ class Pais(models.Model):
     def __str__(self) -> str:
         return self.name 
     
-class Cliente(models.Model):
+class clientes(models.Model):
     name = models.CharField(max_length=100)
     surname = models.CharField(max_length=100)
     birth = models.DateField(null=True)
@@ -15,3 +15,6 @@ class Cliente(models.Model):
 
     def __str__(self) -> str:
         return f"{self.name} {self.surname}"
+    
+class productos(models.Model):
+    pass

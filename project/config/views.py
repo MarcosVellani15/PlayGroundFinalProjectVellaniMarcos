@@ -1,10 +1,5 @@
 from django.http import HttpResponse
 
-def saludo(request):
-    nombre = input("Hola, dime tu nombre: ")
-    return HttpResponse(f"Hola, {nombre.upper()}")
-
-def numero_aleatorio(request):
-    import random
-    numero = random.randint(1,6)
-    return HttpResponse(f"has tirado el dado {numero}")
+def saludo_con_input(request):
+    nombre = input("Dinos cual es tu nombre: ")
+    return print(f"Hola, {nombre}")

@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "home/base.html" %}
+
+{% block title %}
+    <h2>About us:</h2>
+{% endblock title %}
+    
+{% block content %}
     hola! Esto es about
-    <button><a href="{% url "home:index.html" %}">Volver</a></button>
-</body>
-</html>
+    <button><a href="http://127.0.0.1:8000">Volver</a></button>
+{% endblock content %}

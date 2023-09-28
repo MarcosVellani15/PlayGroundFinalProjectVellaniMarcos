@@ -7,18 +7,10 @@
 </head>
 <body>
     
-    <h1>Clientes:<h1>
-    
-    <ul>
-    {% for cliente in cliente%}
+    <h1>Aplicación Coder</h1>
 
-        <li>{{cliente.nombre}}</li>
-        <li>{{cliente.apellido}}</li>
-
-    {% endfor %}    
-    </ul>
-    <p>{{ cliente.nombre }}</p>
-
+    <p><a href="{% url 'cliente:index' %}">Clientes</a></p>
+    <p><a href="{% url 'home:about' %}">About</a></p>
 
 </body>
 </html>

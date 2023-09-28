@@ -21,9 +21,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("saludo_con_input/", views.saludo_con_input),
 ]
 
 urlpatterns += [
+    path("home/", include("home.urls")),
     path("cliente/", include("cliente.urls")),
 ]

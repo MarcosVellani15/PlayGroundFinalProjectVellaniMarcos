@@ -24,6 +24,6 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path("home/", include("home.urls")),
+    path("", include("home.urls")),
     path("cliente/", include("cliente.urls")),
 ]

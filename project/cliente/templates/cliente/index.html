@@ -7,17 +7,17 @@
 </head>
 <body>
     
-    <h1>{{ Coderhouse }}<h1>
+    <h1>Proyecto Django Coderhouse<h1>
     
     <ul>
     {% for clientes in cliente%}
 
-        <li>{{clientes.name}}</li>
-        <li>{{clientes.surname}}</li>
+        <li>{{clientes.nombre}}</li>
+        <li>{{clientes.apellido}}</li>
 
     {% endfor %}    
     </ul>
-    <p>{{ clientes.name }}</p>
+    <p>{{ clientes.nombre }}</p>
 
 
 </body>

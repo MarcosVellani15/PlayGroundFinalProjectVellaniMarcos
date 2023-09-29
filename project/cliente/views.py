@@ -35,5 +35,5 @@ def crear_compra(request):
             form.save()
             return redirect("http://127.0.0.1:8000")
     else:
-        form = forms.ClienteForm()
+        form = forms.CompraForm()
     return render(request, "cliente/crear_compra.html", {"form":form})

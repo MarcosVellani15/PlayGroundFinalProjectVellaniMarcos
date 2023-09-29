@@ -6,11 +6,11 @@
 
 {% block content %}
     
-    <form action="" method="post">
+        <form action="" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Guardar</button>
-    </form>
+        </form>
 
     <p><a href="{% url "home:index" %}">Volver al menú principal</a></p>
 

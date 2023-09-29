@@ -6,4 +6,5 @@ app_name = 'cliente'
 
 urlpatterns = [
     path('', views.index),
+    path("crear/", views.crear, name="crear"),
 ]

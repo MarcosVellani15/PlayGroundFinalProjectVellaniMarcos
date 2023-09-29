@@ -6,11 +6,10 @@
 
 {% block content %}
     <ul>
-    {% for cliente in clientes %}
-
-        <li>{{cliente.nombre}} {{cliente.apellido}}</li>
-        
-    {% endfor %}
+        {% for cliente in clientes %}
+            <li>{{cliente.nombre}} {{cliente.apellido}}</li>
+        {% endfor %}
     </ul>
-    <button><a href="http://127.0.0.1:8000">Volver</a></button>
+    <p><button><a href="{% url 'cliente:crear' %}">Crear cliente</a></button></p>
+    <p><button><a href="{% url 'home:index' %}">Home</a></button></p>
 {% endblock content %}

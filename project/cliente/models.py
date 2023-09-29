@@ -14,3 +14,10 @@ class clientes(models.Model):
 
     def __str__(self) -> str:
         return f"{self.nombre} {self.apellido}"
+    
+class compra(models.Model):
+    nombre = models.CharField(max_length=100)
+    cliente_id = models.ForeignKey(clientes, on_delete=models.SET_NULL, null=True, blank=True)
+
+    def __str__(self) -> str:
+        return f"{self.nombre} {self.descripcion}"

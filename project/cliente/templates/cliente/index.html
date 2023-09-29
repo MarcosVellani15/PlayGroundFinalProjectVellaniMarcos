@@ -11,5 +11,7 @@
         {% endfor %}
     </ul>
     <p><button><a href="{% url 'cliente:crear' %}">Crear cliente</a></button></p>
+    <p><button><a href="{% url 'cliente:crear_pais' %}">Crear país</a></button></p>
+    <p><button><a href="{% url 'cliente:crear-compra' %}">Registrar compra</a></button></p>
     <p><button><a href="{% url 'home:index' %}">Home</a></button></p>
 {% endblock content %}

@@ -56,12 +56,15 @@ Para mostrar las ramas:
 ```bash
 git branch
 ```
-## Funcionalidad de Clase: 
+## Funcionalidad de Clase clientes:
+ 
+- Define los campos "nombre", "apellido", "nacimiento" y "pais_origen_id" para cada cliente
 
 
+## Funcionalidad de Clase Pais: 
 
-## Funcionalidad de Clase: 
+- Define el campo "nombre" para cada país
 
+## Funcionalidad de Clase compra: 
 
-
-## Funcionalidad de Clase: 
+- Define los campos "nombre_compra" y "precio" para el registro de cada compra

@@ -18,6 +18,6 @@ class clientes(models.Model):
 
 class compra(models.Model):
     nombre_compra = models.CharField(max_length=100)
-    precio = models.FloatField(null=True)
+    precio = models.DecimalField(null=True)
     def __str__(self) -> str:
         return f"{self.nombre_compra} {self.precio}"

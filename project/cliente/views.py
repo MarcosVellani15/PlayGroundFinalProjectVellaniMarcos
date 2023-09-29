@@ -26,7 +26,7 @@ def crear_pais(request):
             return redirect("http://127.0.0.1:8000")
     else:
         form = forms.PaisForm()
-    return render(request, "cliente/crear.html", {"form":form})
+    return render(request, "cliente/crear_pais.html", {"form":form})
 
 def crear_compra(request):
     if request.method == "POST":
@@ -36,4 +36,4 @@ def crear_compra(request):
             return redirect("http://127.0.0.1:8000")
     else:
         form = forms.ClienteForm()
-    return render(request, "cliente/crear-compra.html", {"form":form})
+    return render(request, "cliente/crear_compra.html", {"form":form})

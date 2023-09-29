@@ -15,4 +15,4 @@ class PaisForm(forms.ModelForm):
 class CompraForm(forms.ModelForm):
     class Meta:
         model = models.compra
-        fields = ["nombre", "cliente_id"]
+        fields = ["nombre_compra", "precio"]

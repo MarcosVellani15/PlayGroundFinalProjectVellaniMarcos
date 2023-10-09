@@ -7,21 +7,17 @@
         <div class="col-lg-5">
             <h1 class="font-weight-light">Bienvenido al Ático de Nathan Drake</h1>
             <p>Este es el sitio de venta de las antigüedades exóticas conseguidas por Nathan en sus aventuras, desde el hallazgo de el Dorado, hasta la busqueda del tesoro de Henry Avery.</p>
-            <a class="btn btn-primary" href="{% url "home:productos" %}">Ver productos</a>
+            <a class="btn btn-primary" href="{% url "home:about" %}">Sobre Nosotros</a>
         </div>
     </div>
     <!-- Call to Action-->
     <div class="card text-white bg-secondary my-5 py-4 text-center">
-        <div class="card-body"><p class="text-white m-0">Este es nuestro listado de productos disponibles actualmente:</p></div>
+        <div class="card-body"><p class="text-white m-0">Más información acerca de nuestra operación:</p></div>
     </div>
     <!-- Content Row-->
-    <div class="row gx-4 gx-lg-5 align-align-items-center">
+    <div class="row gx-4 gx-lg-5 align-items-center">
         {% include "home/card.html" with tarjeta="tarjeta1" %}
         {% include "home/card.html" with tarjeta="tarjeta2" %}
         {% include "home/card.html" with tarjeta="tarjeta3" %}
     </div>
-
-    <p><a href="{% url "home:clientes" %}">Clientes</a></p>
-    <p><a href="{% url "home:about" %}">About</a></p>
-    <p><a href="{% url "home:productos" %}">Productos</a></p>
 {% endblock content %}

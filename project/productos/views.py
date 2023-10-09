@@ -1,6 +1,10 @@
 from django.shortcuts import render
+from django.views.generic import ListView
 
-# Create your views here.
+from.import models
 
-def index(request):
-    return render(request, "productos/index.html")
+class ProductoCategoriaList(ListView):
+    model = models.ProductoCategoria
+
+class ProductoCategoriaDetail(ListView):
+    model = models.ProductoCategoria

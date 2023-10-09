@@ -3,13 +3,11 @@ from django.urls import path
 
 from . import views
 
-app_name = "home"
+app_name = "productos"
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("about/", views.about, name="about"),
-    path("clientes/", views.clientes, name="clientes"),
-    path("productos/", views.productos, name="productos"),
+    #path("comprar/", views.comprar, name="comprar"),
 ]
 
 

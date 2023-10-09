@@ -5,6 +5,7 @@
 {% endblock title %}
     
 {% block content %}
-    <p><a href="cliente/">Clientes</a></p>
-    <p><a href="about/">About</a></p>
+    <p><a href="{% url "home:clientes" %}">Clientes</a></p>
+    <p><a href="{% url "home:about" %}">About</a></p>
+    <p><a href="{% url "home:productos" %}">Productos</a></p>
 {% endblock content %}

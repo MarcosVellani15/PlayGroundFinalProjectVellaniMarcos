@@ -22,28 +22,13 @@
             {% block title %}
             
             {% endblock title %}            
-            <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'home/imagenes/atico_drake.jpg' %}" alt="..." /></div>
-                <div class="col-lg-5">
-                    <h1 class="font-weight-light">Bienvenido al Ático de Nathan Drake</h1>
-                    <p>Este es el sitio de venta de las antigüedades exóticas conseguidas por Nathan en sus aventuras, desde el hallazgo de el Dorado, hasta la busqueda del tesoro de Henry Avery.</p>
-                    <a class="btn btn-primary" href="{% url "home:productos" %}">Ver productos</a>
-                </div>
+
+            <div class="mb-lg-5 m-5">
                 {% block content %}
                 {% endblock content %}
             </div>
-            <!-- Call to Action-->
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class="text-white m-0">Este es nuestro listado de productos disponibles actualmente:</p></div>
-            </div>
-            <!-- Content Row-->
-            {% include "home/card.html" with tarjeta="tarjeta1" %}
-            {% include "home/card.html" with tarjeta="tarjeta2" %}
-                {% include "home/card.html" with tarjeta="tarjeta3" %}
         </div>
-        
-        <!-- Footer-->
+            
         {% include "home/footer.html" %}
                 <!-- Bootstrap core JS-->
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

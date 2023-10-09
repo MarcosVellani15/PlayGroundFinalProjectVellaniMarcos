@@ -10,5 +10,5 @@ def about(request):
 def clientes(request):
     return render(request, "cliente/index.html")
 
-def productos(request):
-    return render(request, "productos/index.html")
+def producto(request):
+    return render(request, "producto/index.html")

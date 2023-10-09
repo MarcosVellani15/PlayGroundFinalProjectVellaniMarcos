@@ -1,9 +1,9 @@
-{% extends "productos/base.html" %}
+{% extends "producto/base.html" %}
 
 {% block productos %}
 
     <ul>
         <li><strong>Descripción:</strong> {{ object.descripcion }}</li>
     </ul>
-
+    <a href="producto:index">Volver</a>
 {% endblock productos %}

@@ -1,14 +1,14 @@
-{% extends "productos/base.html" %}
+{% extends "producto/base.html" %}
 
 {% block productos %}
 
     {% for producto in object_list %}
         <ul>
-            <li>{{producto.nombre}}</li>
-            <a href="{% url "productos:productocategoria_detail" producto.id %}">Ver Detalle</a>
+            <li>{{ producto.nombre }}</li>
+            <a href="{% url "producto:productocategoria_detail" producto.id %}">Ver Detalle</a>
             <a href="">Actualizar</a>
             <a href="">Eliminar</a>
         </ul>
     {% endfor %}
-
+    
 {% endblock productos %}

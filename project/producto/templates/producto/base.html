@@ -1,0 +1,14 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+    {% block content_title %}
+        <h2>Productos:</h2>
+    {% endblock content_title %}
+
+    {% block productos %}
+        
+    {% endblock productos %}
+    
+    <p><button><a href="{% url "home:index" %}">Home</a></button></p>
+
+{% endblock content %}

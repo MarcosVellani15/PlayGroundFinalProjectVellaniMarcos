@@ -1,0 +1,24 @@
+{% extends "producto/base.html" %}
+
+{% block productos %}
+
+    <div class="py-4">
+        <form action="" method="get">
+            <input type="text" name="buscar" placeholder="Buscar Categoría">
+        </form>
+    </div>
+
+    {% for producto in object_list %}
+        <ul>
+            <li>{{ producto.nombre }}</li>
+            <a href="{% url "producto:productocategoria_detail" producto.id %}">Ver Detalle</a>
+            <a href="{% url "producto:productocategoria_update" producto.id %}">Actualizar</a>
+            <a href="{% url "producto:productocategoria_delete" producto.id %}">Eliminar</a>
+        </ul>
+    {% endfor %}
+
+    <a href="{% url "producto:productocategoria_create" %}">Crear Categoría</a>
+
+    <p><button><a href="{% url "producto:index" %}">Volver</a></button></p>
+
+{% endblock productos %}

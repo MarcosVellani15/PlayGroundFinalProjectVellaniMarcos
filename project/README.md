@@ -68,3 +68,7 @@ git branch
 ## Funcionalidad de Clase compra: 
 
 - Define los campos "nombre_compra" y "precio" para el registro de cada compra
+
+## Funcionalidad de la app producto:
+
+-contiene los productos y sus categorías junto con sus CRUD para modificarlas(solo si estas logueado)
